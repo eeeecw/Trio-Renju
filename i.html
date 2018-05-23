@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>三国鼎立</title>
+	<meta itemprop="name" content="e三人五子棋之三国鼎立" />
+	<meta itemprop="image" content="http://www.yalieq.com/wzq/logo.jpg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, maximum-scale=1.0, user-scalable=no">
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/1.css" rel="stylesheet" type="text/css" />
+	<link href="./css/suofang.css" media="screen and (max-device-width: 400px) and screen and (min-width: 400px) and (max-device-width: 600px)"
+	 rel="stylesheet" type="text/css" />
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://cdn.bootcss.com/Swiper/4.2.2/css/swiper.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/Swiper/4.2.2/js/swiper.min.js"></script>
+	<script src="http://cdn-hangzhou.goeasy.io/goeasy.js"></script>
+	<script src="./js/index.js"></script>
+	<link rel="stylesheet" href="./css/css.css">
+	<script type="text/javascript">
+		window.addEventListener(('orientationchange' in window ? 'orientationchange' : 'resize'), (function () {
+			function c() {
+				var d = document.documentElement;
+				var cw = d.clientWidth || 750;
+				d.style.fontSize = cw / 20 + 'px';
+			}
+			c();
+			return c;
+		})(), false);
+	</script>
+</head>
+
+<body>
+	<div id="container" class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" id="slide1" style="background-color: #EBEBEB;">
+				<div class="begin cm">
+					<img class="begin-img" src="./image/begin.png" />
+					<div class="start" id="start">
+						<img id="startGame" src="image/shanzi.png" />
+						<img id="startGame2" src="image/shanzijinru.png" />
+					</div>
+					<div class="help">
+						<a onclick="help()">
+							<img id="help" src="./image/shanzi.png" />
+							<img id="help2" src="./image/shanzibangzhu.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide" id="slide2">
+				<div id="login" class="cm">
+					<div>
+						<img id="play1" src="image/wei1.png">
+					</div>
+					<div>
+						<img id="play2" src="image/shu1.png">
+					</div>
+					<div>
+						<img id="play3" src="image/wu1.png">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide" id="slide3">
+				<canvas id="c1" class="cm"></canvas>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

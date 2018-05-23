@@ -1,0 +1,66 @@
+html,body{
+	padding: 0;margin: 0;height: 100%;
+}
+.swiper-container,.swiper-wrapper,.swiper-slide{
+	height: 100%;
+}
+
+
+
+.ebtn {
+  margin: 25px auto;
+  position: relative;
+  font-size: 25px;
+  color: #fff;
+  padding: 20px;
+  width: 200px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.ebtn.stroke:after {
+  content: "";
+  background: #fff;
+  display: block;
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all 0.75s ease-in-out;
+}
+.ebtn.stroke:active:after {
+  width: 0px;
+  opacity: 1;
+  transition: 0s;
+}
+.ebtn.half-stroke:after {
+  content: "";
+  background: #fff;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all 0.75s ease-in-out;
+}
+.ebtn.half-stroke:active:after {
+  width: 0px;
+  opacity: 1;
+  transition: 0s;
+}
+
+.ebtn.left:after {
+  left: 0;
+}
+ 
+.add{
+  opacity:0.45;
+} 
+
+.bgimage{ 
+position:fixed;z-index:-1;
+} 
+.bgimage img{heiht:100%;width:100%;} 

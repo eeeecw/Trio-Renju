@@ -1,0 +1,58 @@
+.cm{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.begin{
+    display: inline-block;
+}
+.begin-img{
+    width: 10rem;
+}
+.begin .start{
+    position: absolute;
+    left: 1.5rem;
+    top: 2rem;
+}
+.begin .help{
+    position: absolute;
+    left: 1.5rem;
+    top: 4rem;
+}
+.begin .start img,.begin .help img{
+    width: 2.2rem;
+}
+.begin .start #startGame2,.begin .help #help2{
+    display: none;
+}
+.begin .start:hover #startGame{
+    display: none;
+}
+.begin .start:hover #startGame2{
+    display: inline;
+}
+.begin .help:hover #help{
+    display: none;
+}
+.begin .help:hover #help2{
+    display: inline;
+}
+#slide1{
+    background-color: #EBEBEB;
+}
+#slide2,#slide3{
+    background-image: url(../image/login.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#login img{
+    display: block;
+    width: 2rem;
+    margin: 0.7rem 0;
+}
+#c1 {
+    box-shadow: 1px 1px 5px #000000;
+    background-image: url(../image/qipan.png);
+    background-repeat: repeat;
+}
