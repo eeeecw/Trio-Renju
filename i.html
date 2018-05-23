@@ -40,33 +40,56 @@
 						<img id="startGame" src="image/shanzi.png" />
 						<img id="startGame2" src="image/shanzijinru.png" />
 					</div>
-					<div class="help">
+					<div class="help" id="help">
 						<a onclick="help()">
-							<img id="help" src="./image/shanzi.png" />
+							<img id="help1" src="./image/shanzi.png" />
 							<img id="help2" src="./image/shanzibangzhu.png" />
 						</a>
+					</div>
+				</div>
+				<div id="helppage" class="cm">
+					<div id="closehelp">
+						<img src="./image/return_3.png" alt="">
+					</div>
+					<div class="text">
+						aaaaaaaaaaaaaaaaaaaaaaaaa
+						<br> aaaaaaaaaaaaaaaaaaaaaaaaa
+						<br> aaaaaaaaaaaaaaaaaaaaaaaaa
+						<br> aaaaaaaaaaaaaaaaaaaaaaaaa
+						<br> aaaaaaaaaaaaaaaaaaaaaaaaa
+						<br> aaaaaaaaaaaaaaaaaaaaaaaaa
+						<br>
 					</div>
 				</div>
 			</div>
 			<div class="swiper-slide" id="slide2">
 				<div id="login" class="cm">
-					<div>
-						<img id="play1" src="image/wei1.png">
+					<div style="margin-bottom: 1.71rem;width: 7.2rem;text-align: center;">
+						<img id="play1" style="margin: 0 auto;" src="image/wei1.png">
 					</div>
-					<div>
+					<div style="width: 7.2rem;height: 2rem;display: flex;justify-content: space-between;">
 						<img id="play2" src="image/shu1.png">
-					</div>
-					<div>
 						<img id="play3" src="image/wu1.png">
 					</div>
 				</div>
 			</div>
 			<div class="swiper-slide" id="slide3">
 				<canvas id="c1" class="cm"></canvas>
+				<div id="now">
+					<img src="./image/shu.png" alt="" id="p1">
+					<img style="display: none;" src="./image/wei.png" alt="" id="p2">
+					<img style="display: none;" src="./image/wu.png" alt="" id="p3">
+				</div>
 			</div>
 		</div>
 	</div>
-
+	<div id="over">
+		<div class="cm">
+			<img style="display: none;" src="./image/heiw.png" alt="" id="cue1">
+			<img style="display: none;" src="./image/baiw.png" alt="" id="cue2">
+			<img style="display: none;" src="./image/lanw.png" alt="" id="cue3">
+		</div>
+	</div>
 </body>
 
 </html>

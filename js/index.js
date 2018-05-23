@@ -148,12 +148,12 @@
 
         switch (now) {
             case 1:
-                gradient.addColorStop(0, "#980000");
-                gradient.addColorStop(1, "#ff3333");
+                gradient.addColorStop(0, "#000000");
+                gradient.addColorStop(1, "#e6e6e6");
                 break;
             case 2:
-                gradient.addColorStop(0, "#ff9900");
-                gradient.addColorStop(1, "#ffff99");
+                gradient.addColorStop(0, "#e6e6e6");
+                gradient.addColorStop(1, "#ffffff");
                 break;
             case 3:
                 gradient.addColorStop(0, "#0000ff");
@@ -257,7 +257,9 @@
                 // }
 
                 if (myWin[now][k] == 5) {
-                    window.alert("恭喜" + play[now] + "，获得了胜利！");
+                    $("#over").show();
+                    $("#cue"+play[now]).show();
+                    //window.alert("恭喜" + play[now] + "，获得了胜利！");
                     over = true;
                 }
             }
@@ -371,6 +373,12 @@
         sureplay(3);
         $("#play3").attr("src", "image/wu2.png");
     });
+    $("#closehelp").click(function(){
+        $("#helppage").hide(500);
+    });
+    $("#help").click(function(){
+        $("#helppage").show(500);
+    });
 
     //选择棋子后开始推送消息
     function sureplay(playid) {
@@ -412,15 +420,21 @@
         switch (now) {
             case 1:
                 //alert("红走");
-                $("#next").attr("src", "image/wei.png");
+                $("#p1").show();
+                $("#p2").hide();
+                $("#p3").hide();
                 break;
             case 2:
                 //alert("黄走");
-                $("#next").attr("src", "image/shu.png");
+                $("#p1").hide();
+                $("#p2").show();
+                $("#p3").hide();
                 break;
             case 3:
                 //alert("蓝走");
-                $("#next").attr("src", "image/wu.png");
+                $("#p1").hide();
+                $("#p2").hide();
+                $("#p3").show();
                 break;
         }
     }

@@ -32,7 +32,7 @@
 .begin .start:hover #startGame2{
     display: inline;
 }
-.begin .help:hover #help{
+.begin .help:hover #help1{
     display: none;
 }
 .begin .help:hover #help2{
@@ -49,10 +49,37 @@
 #login img{
     display: block;
     width: 2rem;
-    margin: 0.7rem 0;
 }
 #c1 {
     box-shadow: 1px 1px 5px #000000;
     background-image: url(../image/qipan.png);
     background-repeat: repeat;
+}
+#slide3 #now{
+    padding: 1rem 0 0 0.6rem;
+}
+#over{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(204, 204, 204, 0.4);
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+#helppage{
+    display: none;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    background-color: #bbc1ff;
+    border-radius: 33px;
+}
+#closehelp{
+    float: right;
+}
+#closehelp img{
+    width: 1rem;
+}
+#helppage .text{
+    font-size: 1rem;
 }
